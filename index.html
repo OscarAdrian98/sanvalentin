@@ -10,22 +10,35 @@
 
 <body>
 
+    <!-- Lluvia de corazones -->
     <div id="lluvia-corazones"></div>
 
     <div class="tarjeta">
-        <h1 class="titulo">Tengo algo para ti 💝</h1>
 
-        <button id="abrir" class="boton">
-            Toca aquí para abrir tu regalo
-        </button>
+        <!-- CONTENIDO INICIAL CENTRADO -->
+        <div class="inicio">
+            <h1 class="titulo">Tengo algo para ti 💝</h1>
 
+            <button id="abrir" class="boton">
+                Toca aquí para abrir tu regalo
+            </button>
+        </div>
+
+        <!-- CONTENIDO QUE APARECE AL ABRIR -->
         <div id="contenido" class="contenido oculto">
             <img src="foto.jpg" class="foto" alt="Nosotros">
 
             <p class="mensaje">
-                Este San Valentín quiero pasarlo contigo,
-                con la mujer de mi vida ❤️
-                y con la persona que hace que todo tenga sentido.
+                Este San Valentín quiero pasarlo contigo,<br>
+                con la mujer de mi vida ❤️<br><br>
+
+                contigo, que llenas mis días de calma,<br>
+                de sonrisas y de sentido.<br><br>
+
+                Gracias por ser hogar, por ser apoyo,<br>
+                y por convertir cada momento en algo especial.<br><br>
+
+                Te amo.
             </p>
 
             <div class="ramo-contenedor">
@@ -33,6 +46,9 @@
             </div>
         </div>
     </div>
+
+    <!-- MÚSICA -->
+    <audio id="musica" src="musica.mp3"></audio>
 
     <script src="script.js"></script>
 </body>
