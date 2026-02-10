@@ -12,37 +12,51 @@ body {
     justify-content: center;
 
     overflow-y: auto;
-    /* ✅ permite scroll vertical */
     overflow-x: hidden;
-    /* ✅ evita scroll horizontal */
 }
 
+/* TARJETA PRINCIPAL */
 .tarjeta {
     width: 92%;
     max-width: 390px;
-    background: rgba(255, 255, 255, 0.96);
-    border-radius: 30px;
-    padding: 30px 24px 34px;
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 32px;
+    padding: 34px 26px 40px;
     text-align: center;
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.18);
+    box-shadow: 0 28px 55px rgba(0, 0, 0, 0.2);
+    margin: 40px auto;
+    position: relative;
     z-index: 10;
 }
 
+/* BLOQUE INICIAL CENTRADO */
+.inicio {
+    min-height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TÍTULO */
 .titulo {
     color: #b5172f;
     font-size: 26px;
-    margin-bottom: 28px;
+    margin-bottom: 34px;
+    line-height: 1.2;
 }
 
+/* BOTÓN */
 .boton {
     background: linear-gradient(135deg, #ff4d6d, #b5172f);
     border: none;
     color: white;
     font-size: 17px;
-    padding: 15px 28px;
+    padding: 16px 30px;
     border-radius: 40px;
     cursor: pointer;
-    animation: latido 2.2s infinite;
+    animation: latido 2.4s infinite;
+    box-shadow: 0 10px 25px rgba(181, 23, 47, 0.35);
 }
 
 @keyframes latido {
@@ -51,7 +65,7 @@ body {
     }
 
     50% {
-        transform: scale(1.05);
+        transform: scale(1.06);
     }
 
     100% {
@@ -59,48 +73,51 @@ body {
     }
 }
 
+/* CONTENIDO QUE APARECE */
 .contenido {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .oculto {
     display: none;
 }
 
+/* FOTO */
 .foto {
     width: 100%;
-    border-radius: 22px;
+    border-radius: 24px;
     margin-top: 10px;
-    animation: aparecer 2s ease forwards;
+    animation: aparecer 1.8s ease forwards;
 }
 
+/* TEXTO */
 .mensaje {
-    margin-top: 20px;
+    margin-top: 22px;
     font-size: 18px;
-    line-height: 1.55;
+    line-height: 1.6;
     color: #7a0018;
-    animation: aparecer 3s ease forwards;
+    animation: aparecer 2.8s ease forwards;
 }
 
-/* Ramo */
+/* RAMO */
 .ramo-contenedor {
     position: relative;
-    height: 90px;
-    margin-top: 26px;
+    height: 100px;
+    margin-top: 30px;
     overflow: hidden;
 }
 
 .ramo {
     position: absolute;
-    bottom: -10px;
+    bottom: -12px;
     width: 100%;
-    font-size: 40px;
+    font-size: 42px;
     display: flex;
     justify-content: center;
-    gap: 6px;
+    gap: 8px;
 }
 
-/* Corazones */
+/* CORAZONES */
 #lluvia-corazones span {
     position: fixed;
     top: -20px;
@@ -116,10 +133,11 @@ body {
     }
 }
 
+/* APARECER SUAVE */
 @keyframes aparecer {
     from {
         opacity: 0;
-        transform: scale(0.95);
+        transform: scale(0.94);
     }
 
     to {
