@@ -53,5 +53,5 @@ function crecerRamo() {
 
         i++;
         if (i >= rosas.length) clearInterval(intervalo);
-    }, 800);
+    }, 2000);
 }
